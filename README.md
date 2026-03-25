@@ -1,4 +1,4 @@
-# Приложение To-Do-List на чистом JavaScript
+# Приложение To-Do-List
 **Сайт: https://pravdyusha.github.io/To-Do-List**
 ### Основной функционал:
 - добавление и удаление задач
