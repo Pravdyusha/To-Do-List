@@ -27,69 +27,78 @@ body {
 
 @media (max-width: 480px) {
   body {
-    padding: 15px 8px;
+    padding: 12px 8px;
   }
 
   .container {
     max-width: 100%;
     border-radius: 16px;
-    margin: 0 auto;
   }
 
   h1 {
-    padding: 20px 15px;
-    font-size: 1.5rem;
+    padding: 20px 16px;
+    font-size: 1.55rem;
   }
 
   .add-task {
     flex-direction: column;
-    padding: 18px;
+    padding: 20px 16px;
     gap: 12px;
   }
 
   #task-input {
     width: 100%;
-    padding: 16px;
+    padding: 16px 18px;
     font-size: 1.1rem;
+    border-radius: 12px;
   }
 
-  #priority {
-    width: 100%;
-    padding: 16px;
-    font-size: 1.1rem;
+  .add-task > select#priority,
+  #add-btn {
+    height: 52px;
+    font-size: 1.05rem;
+    border-radius: 12px;
   }
 
   #add-btn {
-    width: 100%;
-    padding: 16px;
-    font-size: 1.1rem;
+    background: #22d3ee;
+    font-weight: 600;
   }
 
+  /* Задачи */
   .task-item {
     padding: 16px 18px;
-    font-size: 1.05rem;
+    gap: 12px;
   }
 
+  .task-text {
+    font-size: 1.08rem;
+    line-height: 1.4;
+  }
+
+  .priority {
+    font-size: 0.95rem;
+    padding: 6px 14px;
+    min-width: 70px;
+    text-align: center;
+  }
+
+  /* Фильтры и футер */
   .filters {
-    padding: 12px 15px;
+    padding: 12px 16px;
     gap: 8px;
   }
 
   .filters button,
   #sort-priority,
   #clear-completed {
-    padding: 12px 18px;
+    padding: 12px 16px;
     font-size: 1rem;
   }
 
   .footer {
-    padding: 15px 18px;
+    padding: 16px 18px;
     font-size: 1rem;
-  }
-
-  .priority {
-    font-size: 0.95rem;
-    padding: 6px 14px;
   }
 }
 
