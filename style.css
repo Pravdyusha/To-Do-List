@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #e2e8f0;
+  padding: 20px 10px;
 }
 
 .container {
@@ -22,6 +23,52 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   backdrop-filter: blur(12px);
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  h1 {
+    padding: 18px 15px;
+    font-size: 1.4rem;
+  }
+
+  .add-task {
+    padding: 15px;
+    gap: 8px;
+  }
+
+  #task-input,
+  #priority,
+  #add-btn {
+    padding: 14px 12px;
+    font-size: 1rem;
+  }
+
+  .task-item {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+
+  .filters {
+    padding: 8px 15px;
+    gap: 6px;
+  }
+
+  .filters button,
+  #clear-completed,
+  #sort-priority {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
 }
 
 h1 {
