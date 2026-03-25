@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+
+      <div class="add-task">
+        <input type="text" id="task-input" placeholder="Что нужно сделать?" />
+        <select id="priority">
+          <option value="low">Обычный</option>
+          <option value="medium">Средний</option>
+          <option value="high">Важный</option>
+        </select>
+        <button id="add-btn">Добавить</button>
+      </div>
+
+      <div class="filters">
+        <button data-filter="all" class="active">Все</button>
+        <button data-filter="active">Активные</button>
+        <button data-filter="completed">Выполненные</button>
+        <button id="sort-priority">Сортировать по важности</button>
+      </div>
+
+      <div class="progress-wrapper">
+        <span id="progress-text" class="progress-text">0%</span>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <div id="empty-state" class="empty-state">
+        <p>Список задач пуст</p>
+      </div>
+
+      <div class="footer">
+        <span id="task-count">0 задач</span>
+        <button id="clear-completed">Очистить выполненные</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
