@@ -26,48 +26,70 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 15px 8px;
+  }
+
   .container {
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: 16px;
+    margin: 0 auto;
   }
 
   h1 {
-    padding: 18px 15px;
-    font-size: 1.4rem;
+    padding: 20px 15px;
+    font-size: 1.5rem;
   }
 
   .add-task {
-    padding: 15px;
-    gap: 8px;
+    flex-direction: column;
+    padding: 18px;
+    gap: 12px;
   }
 
-  #task-input,
-  #priority,
+  #task-input {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+
+  #priority {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+
   #add-btn {
-    padding: 14px 12px;
-    font-size: 1rem;
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
   }
 
   .task-item {
-    padding: 14px 16px;
-    font-size: 1rem;
+    padding: 16px 18px;
+    font-size: 1.05rem;
   }
 
   .filters {
-    padding: 8px 15px;
-    gap: 6px;
+    padding: 12px 15px;
+    gap: 8px;
   }
 
   .filters button,
-  #clear-completed,
-  #sort-priority {
-    padding: 8px 14px;
-    font-size: 0.95rem;
+  #sort-priority,
+  #clear-completed {
+    padding: 12px 18px;
+    font-size: 1rem;
   }
 
   .footer {
-    padding: 12px 16px;
+    padding: 15px 18px;
+    font-size: 1rem;
+  }
+
+  .priority {
     font-size: 0.95rem;
+    padding: 6px 14px;
   }
 }
 
