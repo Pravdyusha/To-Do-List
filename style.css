@@ -23,9 +23,6 @@ body {
   overflow: hidden;
   backdrop-filter: blur(12px);
 }
-/* =============================================
-   МОБИЛЬНАЯ АДАПТАЦИЯ — ИСПРАВЛЕННАЯ ВЕРСИЯ
-   ============================================= */
 
 @media (max-width: 520px) {
   .container {
@@ -53,7 +50,7 @@ body {
   }
 
   #task-input {
-    min-width: 0; /* важно, чтобы input не сжимался */
+    min-width: 0;
   }
 
   #add-btn {
