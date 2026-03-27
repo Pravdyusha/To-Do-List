@@ -17,7 +17,7 @@ body {
 .container {
   background: rgba(30, 41, 59, 0.95);
   width: 100%;
-  max-width: 500px;
+  max-width: 530px;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -196,12 +196,12 @@ h1 {
   color: #0f172a;
 }
 .priority.high {
-  background: #ff2e63;
+  background: #ef4444;
   color: #0f172a;
 }
 
 .delete-btn {
-  background: #ff2e63;
+  background: #6b7280;
   color: white;
   border: none;
   width: 30px;
@@ -256,7 +256,7 @@ h1 {
 }
 
 #clear-completed:hover {
-  background: #ff2e63;
+  background: #ff5a7a;
   color: white;
   transform: translateY(-1px);
 }
